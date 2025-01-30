@@ -1,0 +1,71 @@
+@import "../../../node_modules/rfs/scss";
+
+//sm
+@media (min-width: 432px) {
+    .header-bg {
+        height: 150px;
+    }    
+    .titulo {
+        font-size: 1.2rem;
+    }
+}
+
+//md
+@media (min-width: 768px) {
+    .header-bg {
+        height: 58px;
+    }
+    .titulo {
+        font-size: 1.0rem;
+    }
+}
+
+//lg
+@media (min-width: 992px) {
+    .header-bg {
+        height: 58px;
+    }    
+    .titulo {
+        font-size: 1.2rem;
+    }
+}
+
+.header-bg {
+    width: 100%;
+    background-image: url(../../assets/images/header.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.titulo {
+    font-weight: 700;
+    line-height: normal;
+}
+.links {
+    text-shadow: 0px 4px 4px rgba(239, 108, 0, 0.25);
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.105rem;
+    align-items: center;
+}
+.linkedin-ico {
+    background-image: url(../../assets/images/linkedin.png);
+    background-size: 100%;
+    width: 63px;
+    height: 61px;
+    background-repeat: no-repeat;
+}
+.whatsApp-ico {
+    background-image: url(../../assets/images/whatsapp.png);
+    background-size: 100%;
+    width: 63px;
+    height: 61px;
+    background-repeat: no-repeat;
+}
+.cv-ico {
+    background-image: url(../../assets/images/cv.png);
+    background-size: 100%;
+    width: 32px;
+    height: 31px;
+    background-repeat: no-repeat;
+}
