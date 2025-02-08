@@ -1,9 +1,10 @@
-@import "../../../node_modules/rfs/scss";
+@import "../../styles.scss";
 
 //sm
 @media (min-width: 432px) {
     .header-bg {
-        height: 150px;
+        //height: 150px;
+        height: auto;
     }    
     .titulo {
         font-size: 1.2rem;
@@ -23,11 +24,14 @@
 //lg
 @media (min-width: 992px) {
     .header-bg {
-        height: 58px;
+        height: auto;
     }    
     .titulo {
         font-size: 1.2rem;
     }
+}
+.nav {
+    --bs-nav-link-padding-y: 0.2rem !important;
 }
 
 .header-bg {
@@ -49,6 +53,7 @@
     align-items: center;
 }
 .linkedin-ico {
+    display: flex;
     background-image: url(../../assets/images/linkedin.png);
     background-size: 100%;
     width: 63px;
@@ -56,6 +61,7 @@
     background-repeat: no-repeat;
 }
 .whatsApp-ico {
+    display: flex;
     background-image: url(../../assets/images/whatsapp.png);
     background-size: 100%;
     width: 63px;
@@ -63,6 +69,7 @@
     background-repeat: no-repeat;
 }
 .cv-ico {
+    display: flex;
     background-image: url(../../assets/images/cv.png);
     background-size: 100%;
     width: 32px;

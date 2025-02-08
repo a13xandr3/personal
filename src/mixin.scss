@@ -1,0 +1,34 @@
+// 📱 Smartphones pequenos
+@mixin smartphone {
+    @media (max-width: 575px) { @content; }
+}
+  
+// 📱 Smartphones (médios e grandes)
+@mixin smartphone-md {
+    @media (min-width: 576px) and (max-width: 767px) { @content; }
+}
+  
+// 📟 Tablets (pequenos)
+@mixin tablet-sm {
+    @media (min-width: 768px) and (max-width: 991px) { @content; }
+}
+  
+// 📟 Tablets (grandes) e Notebooks pequenos
+@mixin tablet-lg {
+    @media (min-width: 992px) and (max-width: 1199px) { @content; }
+}
+  
+// 💻 Notebooks e Desktops médios
+@mixin desktop {
+    @media (min-width: 1200px) and (max-width: 1599px) { @content; }
+}
+  
+// 🖥️ Desktops grandes
+@mixin desktop-lg {
+    @media (min-width: 1600px) and (max-width: 1919px) { @content; }
+}
+  
+// 📺 TVs e Telas Extra Grandes
+@mixin tv {
+    @media (min-width: 1920px) { @content; }
+}

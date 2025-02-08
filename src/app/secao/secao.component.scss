@@ -1,0 +1,60 @@
+@import "../../styles.scss";
+
+.bg {
+    width: 100%;
+    background-color: #f5e7c6;
+    opacity: 1;
+}
+
+.box-main {
+    padding: 0.5rem;
+    border: 1px solid red;
+    border-radius: 0.6rem;
+    background-color: #EFEB00;
+    opacity: 0.8;
+}
+
+.box {
+    background-color: #B7ADA2;
+    border: 1px solid #856136;
+    border-radius: 0.6rem;
+    //padding: 0.5rem;
+}
+
+p {
+    margin: 0 !important;
+}
+
+p {
+    color: #FFF;
+    font-size: 0.7rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.15rem;
+}
+
+.meu-container {
+    color: #fff;
+
+    @include smartphone { 
+        font-size: 0.6rem;
+    }
+
+    @include tablet-sm {
+        font-size: 1rem;
+    }
+
+    @include tablet-lg {
+        font-size: 1rem;
+    }
+
+    @include desktop {
+    font-size: 1.25rem; // 20px
+    }
+
+    @include tv {
+    font-size: 1.5rem; // 24px
+    }
+
+}

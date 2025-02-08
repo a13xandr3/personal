@@ -1,0 +1,50 @@
+// Reset Global - Remove margens, paddings e define estilos consistentes
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Removendo estilos padrão do body e garantindo responsividade
+body {
+  font-family: "poppins-medium";
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Removendo sublinhado de links e aplicando estilos padrão
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// Reset de listas
+ul, ol {
+  list-style: none;
+}
+
+// Reset de inputs e botões para aparência uniforme
+button, input, textarea {
+  font-family: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+// Definir imagens como responsivas
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+// Remover estilos padrões do HTML5 que podem interferir
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  font-weight: normal;
+}

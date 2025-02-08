@@ -1,0 +1,53 @@
+@import "../../styles.scss";
+
+.bg {
+    background-color: #660011;
+}
+
+ul {
+    padding: 0 !important;
+}
+
+ul {
+    li {
+        text-decoration: none;
+        list-style: none;
+        //width: 33%;
+        min-width: 33%;
+        max-width: 100%;
+        height: auto;
+        flex-shrink: 0;
+        p {
+            font-size: 0.7rem;
+        }
+        ul {
+            li {
+                text-decoration: none;
+                list-style: none;
+                width: 100%;
+                height: auto;
+                flex-shrink: 0;
+            }
+            p {
+                font-size: 0.5rem;
+            }
+        }
+    }
+}
+.links-main {
+    color: #FFF;
+    text-align: center;
+    font-size: 0.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.105rem;
+}
+.copyright {
+    color: #FFF;
+    font-size: 0.45rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.07rem;
+}

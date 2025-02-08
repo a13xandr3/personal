@@ -1,4 +1,4 @@
-@import "node_modules/bootstrap/scss/functions";
+@import "./mixin.scss";
 
 @font-face {
   font-family: "poppins-medium";
@@ -6,62 +6,42 @@
   font-weight: normal;
   font-style: normal;
 }
-// Reset Global - Remove margens, paddings e define estilos consistentes
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-// Removendo estilos padrão do body e garantindo responsividade
-body {
+:host {
   font-family: "poppins-medium";
-  line-height: 1.6;
-  color: #333;
-  background-color: #fff;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-// Removendo sublinhado de links e aplicando estilos padrão
-a {
-  text-decoration: none;
-  color: inherit;
+@include smartphone { 
+  .legendas, labels, .tags { font-size: 0.75rem; }
+  .corpo-texto { font-size: 1rem; }
+  h3 { font-size: 1.25rem; }
+  h4 { font-size: 1.5rem; }
+  h2 { font-size: .75rem }
+  h1 { font-size: 2.5rem; }
 }
 
-// Reset de listas
-ul, ol {
-  list-style: none;
+@include smartphone-md {
+  h2 { font-size: .75rem }
+  //font-size: 1rem;
 }
-
-// Reset de inputs e botões para aparência uniforme
-button, input, textarea {
-  font-family: inherit;
-  border: none;
-  outline: none;
-  background: none;
+@include tablet-sm {
+  h2 { font-size: .75rem }
+  //font-size: 1rem;
 }
-
-// Definir imagens como responsivas
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+@include tablet-lg {
+  h2 { font-size: .75rem }
+  //font-size: 1rem;
 }
-
-// Remover estilos padrões do HTML5 que podem interferir
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
-  font-weight: normal;
+@include desktop {
+  h2 { font-size: .75rem }
+  //font-size: 1rem;
 }
-
-// Definição de um container flexível
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+@include desktop-lg {
+  h2 { font-size: .75rem }
+  //font-size: 1rem;
 }
-
+//1920
+@include tv {
+  h2 { font-size: 1.3rem }
+  //font-size: 1rem;
+}

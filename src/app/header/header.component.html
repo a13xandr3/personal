@@ -1,10 +1,11 @@
+<!--
 <div class="container-fluid header-bg">
     <div class="container">
         <div class="row">
-            <span class="col-12 col-md-3 col-lg-3 d-flex justify-content-center justify-md-content-start justify-lg-content-start align-items-center text-white titulo">ALEXANDRE ESTEVES</span>
-            <span class="col-12 col-md-2 col-lg-2 d-flex justify-content-center align-items-center text-white links">Sobre</span>
-            <span class="col-12 col-md-2 col-lg-2 d-flex justify-content-center align-items-center text-white links">Portfolio</span>
-            <span class="col-12 col-md-2 col-lg-2 d-flex justify-content-center align-items-center text-white links">Contato</span>
+            <span class="col-12 col-md-3 col-lg-3 d-flex justify-content-center justify-md-content-start justify-lg-content-start align-items-center text-white titulo"><a routerLink="/">ALEXANDRE ESTEVES</a></span>
+            <span class="col-12 col-md-2 col-lg-2 d-flex justify-content-center align-items-center text-white links"><a routerLink="/quemSomos">Sobre</a></span>
+            <span class="col-12 col-md-2 col-lg-2 d-flex justify-content-center align-items-center text-white links"><a routerLink="/portfolio">Portfolio</a></span>
+            <span class="col-12 col-md-2 col-lg-2 d-flex justify-content-center align-items-center text-white links"><a routerLink="/contato">Contato</a></span>
             <span class="col-12 col-md-3 col-lg-3 d-flex gap-md-1 gap-lg-3 justify-content-center align-items-center">
                 <span class="linkedin-ico"></span>
                 <span class="whatsApp-ico"></span>
@@ -13,3 +14,43 @@
         </div>
     </div>
 </div>
+-->
+
+<section class="container-fluid header-bg">
+
+    <div class="container">
+        
+        <div class="row align-items-center">
+
+            <nav class="">
+
+                <ul class="nav row d-flex align-items-center">
+                    <li class="nav-item col-12 col-md-3">
+                        <a routerLink="/" class="nav-link text-white text-start"><h2>ALEXANDRE ESTEVES</h2></a>
+                    </li>
+                    <li class="nav-item col-12 col-md-2">
+                        <a routerLink="/quemSomos" class="nav-link text-white"><h2>Sobre</h2></a>
+                    </li>
+                    <li class="nav-item col-12 col-md-2">
+                        <a routerLink="/portfolio" class="nav-link text-white"><h2>Portfolio</h2></a>
+                    </li>
+                    <li class="nav-item col-12 col-md-2">
+                        <a routerLink="/contato" class="nav-link text-white"><h2>Contato</h2></a>
+                    </li>
+                    <li class="nav-item col-12 col-md-1">
+                        <a routerLink="/contato" class="nav-link text-white"><span class="linkedin-ico"></span></a>
+                    </li>
+                    <li class="nav-item col-12 col-md-1">
+                        <a routerLink="/contato" class="nav-link text-white"><span class="whatsApp-ico"></span></a>
+                    </li>
+                    <li class="nav-item col-12 col-md-1">
+                        <a routerLink="/contato" class="nav-link text-white"><span class="cv-ico"></span></a>
+                    </li>
+                </ul>
+
+            </nav>
+
+        </div>
+    </div>
+
+</section>
